@@ -7,11 +7,11 @@ public class Delete {
     public static void delete() throws IOException {
         System.out.println("Enter  Your Name For Deletion");
         String name = bufferedReader.readLine();
-        if (){
-
-        }else {
-
-        }
+//        if (){
+//
+//        }else {
+//
+//        }
 
 
     }
