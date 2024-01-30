@@ -8,9 +8,10 @@ public class Delete {
        System.out.println("Enter  Your Name For Deletion");
         String name = bufferedReader.readLine();
        for (Entity entity :Create.list) {
-           if (name.equalsIgnoreCase(entity.getName())) {
+           if (entity.getName().equalsIgnoreCase(name)) {
                Create.list.remove(entity);
                System.out.println("Removed Successfully");
+               System.out.println(Create.list);
            } else {
                System.out.println("invalid Name");
            }

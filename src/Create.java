@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Create {
   static   List<Entity> list = new ArrayList<>();
-   static Entity entity= new Entity();
+   static Entity entity;
     public static void createRecord (){
         System.out.println("create");
 
@@ -15,7 +15,7 @@ public class Create {
 
             System.out.println(" ENTER NAME IN ARRAYLIST:-");
             String name = sc.next();
-
+entity= new Entity();
             entity.setName(name);
             list.add(entity);
 
