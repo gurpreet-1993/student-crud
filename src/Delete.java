@@ -4,15 +4,16 @@ import java.io.InputStreamReader;
 
 public class Delete {
   static BufferedReader bufferedReader= new BufferedReader(new InputStreamReader(System.in));
-    public static void delete() throws IOException {
-        System.out.println("Enter  Your Name For Deletion");
+static   Entity entity;
+   public static void delete() throws IOException {
+       System.out.println("Enter  Your Name For Deletion");
         String name = bufferedReader.readLine();
-//        if (){
-//
-//        }else {
-//
-//        }
 
+       if (name.equalsIgnoreCase(entity.getName())) {
+           Create.list.remove(entity);
 
-    }
+        }else {
+           System.out.println("invalid Book Name");
+       }
+       }
 }

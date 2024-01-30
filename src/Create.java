@@ -4,19 +4,20 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Create {
-  static   List<String> list = new ArrayList<>();
+  static   List list = new ArrayList<>();
+   static Entity entity= new Entity();
     public static void createRecord (){
         System.out.println("create");
 
         Scanner sc = new Scanner(System.in);
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 2; i++) {
 
             System.out.println(" ENTER NAME IN ARRAYLIST:-");
             String name = sc.next();
-Entity entity= new Entity();
-entity.setName(name);
-            list.add(entity.getName());
+
+            entity.setName(name);
+            list.add(entity);
 
         }
         System.out.println(list);
