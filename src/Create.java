@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Create {
-  static   List list = new ArrayList<>();
+  static   List<Entity> list = new ArrayList<>();
    static Entity entity= new Entity();
     public static void createRecord (){
         System.out.println("create");

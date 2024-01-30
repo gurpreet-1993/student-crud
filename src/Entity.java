@@ -1,7 +1,7 @@
 public class Entity {
     String name ;
 
-    public static String getName() {
+    public  String getName() {
         return name;
     }
 
